@@ -22,13 +22,25 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/**
+ * The type Calculator.
+ */
 public class Calculator extends JFrame implements ActionListener {
 
+	/**
+	 * The constant WIDTH.
+	 */
 	public static final int WIDTH = 250;
+	/**
+	 * The constant HEIGHT.
+	 */
 	public static final int HEIGHT = 300;
 	private JTextField numberLineField;
 	private double result = 0;
 
+	/**
+	 * Instantiates a new Calculator.
+	 */
 	public Calculator() {
 		//super("calc");
 
@@ -143,6 +155,11 @@ public class Calculator extends JFrame implements ActionListener {
 
 	}
 
+	/**
+	 * Action performed.
+	 *
+	 * @param e the e
+	 */
 	public void actionPerformed(ActionEvent e) {
 		String actionCommand = e.getActionCommand();
 		if (actionCommand.equals("C")) {
@@ -188,6 +205,11 @@ public class Calculator extends JFrame implements ActionListener {
 		}
 	}
 
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		Calculator guiCalculator = new Calculator();
 		guiCalculator.setVisible(true);

@@ -1,19 +1,27 @@
-
 /**
- * ExpressionSolver Class 
- * A GUI calculator Program to evaluate simple expressions. 
- * simple expression may include +,-,*,/, ., and parenthesis. 
- * Artin Malekian 
- * Dr. Hoang 
- * CSC 201 - 
- * Assignment #4 
+ * ExpressionSolver Class
+ * A GUI calculator Program to evaluate simple expressions.
+ * simple expression may include +,-,*,/, ., and parenthesis.
+ * Artin Malekian
+ * Dr. Hoang
+ * CSC 201 -
+ * Assignment #4
  * 12+1 December 2016
  */
 public class ExpressionSolver {
 
 	private static String numWhol;
+	/**
+	 * The Dvz.
+	 */
 	DivideByZeroException dvz = new DivideByZeroException();
 
+	/**
+	 * Solve double.
+	 *
+	 * @param e the e
+	 * @return the double
+	 */
 	public static double solve(String e) {
 		double n1 = 0, n2, n3;
 
@@ -122,6 +130,12 @@ public class ExpressionSolver {
 		return (n1);
 	}
 
+	/**
+	 * Oper setter int.
+	 *
+	 * @param q the q
+	 * @return the int
+	 */
 	/*
 	 * Precondition: get a peace of string. Postcondition: Return the position
 	 * of the fist operator in there.
@@ -141,6 +155,12 @@ public class ExpressionSolver {
 		return result;
 	}
 
+	/**
+	 * Paren chech string.
+	 *
+	 * @param n the n
+	 * @return the string
+	 */
 	/*
 	 * Precondition: get a peace of string. Postcondition: check possible
 	 * parentheses and calculate it and replace into the original number line
@@ -193,6 +213,12 @@ public class ExpressionSolver {
 		return result;
 	}
 
+	/**
+	 * Paren hand string.
+	 *
+	 * @param k the k
+	 * @return the string
+	 */
 	/*
 	 * Precondition: get a peace of string. Postcondition: Return a calculated
 	 * number
@@ -267,6 +293,14 @@ public class ExpressionSolver {
 		return result;
 	}
 
+	/**
+	 * Calc numb double.
+	 *
+	 * @param o the o
+	 * @param a the a
+	 * @param b the b
+	 * @return the double
+	 */
 	/*
 	 * Precondition: get the numbers and operator. Postcondition: Return a
 	 * calculated number
@@ -294,6 +328,13 @@ public class ExpressionSolver {
 		return result;
 	}
 
+	/**
+	 * Oper finder char.
+	 *
+	 * @param a the a
+	 * @param b the b
+	 * @return the char
+	 */
 	/*
 	 * Precondition: get two operator. Postcondition: Return the appropriate
 	 * operator
@@ -309,6 +350,12 @@ public class ExpressionSolver {
 		return result;
 	}
 
+	/**
+	 * Paren cutter string.
+	 *
+	 * @param n the n
+	 * @return the string
+	 */
 	/*
 	 * Precondition: check the input string with parenthesis . Postcondition:
 	 * Return the out put without parenthesis.
